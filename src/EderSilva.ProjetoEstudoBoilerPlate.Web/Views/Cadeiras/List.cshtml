@@ -1,0 +1,27 @@
+﻿
+@model EderSilva.ProjetoEstudoBoilerPlate.Web.ViewModels.IndexViewModel
+@{
+    ViewBag.Title = L("CadeiraList");
+    ViewBag.ActiveMenu = "CadeirasList";
+}
+
+<h2>@L("CadeiraList")</h2>
+<span class="pull-right">
+    
+</span>
+<div class="row">
+    <div>
+        <ul class="list-group" id="TaskList">
+            @foreach (var cadeira in Model.Cadeiras)
+            {
+                <li class="list-group-item">
+                    <span class="pull-right label @Model.GetCadeiraLabel(cadeira)">@L($"TaskState_{cadeira.State}")</span>
+                    <h4 class="list-group-item-heading">@cadeira.Title</h4>
+                    <div class="list-group-item-text">
+                        @cadeira.CreationTime.ToString("yyyy-MM-dd HH:mm:ss")
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

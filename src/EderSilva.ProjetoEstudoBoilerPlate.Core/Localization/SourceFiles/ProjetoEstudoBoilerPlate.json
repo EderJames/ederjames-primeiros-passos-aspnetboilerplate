@@ -1,0 +1,14 @@
+﻿{
+  "culture": "en",
+  "texts": {
+    "HelloWorld": "Hello World!",
+    "ChangeLanguage": "Change language",
+    "HomePage": "HomePage",
+    "About": "About",
+    "Home_Description": "Welcome to ProjetoEstudoBoilerPlate...",
+    "About_Description": "This is a simple startup template to use ASP.NET Core with ABP framework.",
+    "CadeiraList": "Lista de Cadeiras",
+    "TaskState.Open": "Aberto",
+    "TaskState.Completed": "Completado"
+  }
+}
